@@ -5,5 +5,8 @@
 </head>
 <body>
 <h1>Customers</h1>
+<div th:each= "customer: ${customerAsCollection}">
+<p th:text = "${customer.buildFullName()}"></p>
+</div>
 </body>
 </html>
